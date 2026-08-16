@@ -35,6 +35,11 @@
     {
       "title": "小説",
       "text": "ここに小説活動の紹介を入力します。"
+    },
+    {
+      "title": "Youtube",
+      "url": "https://www.youtube.com/@%E9%81%94%E5%AE%89%E9%83%A8-r7l",
+      "linkLabel": "Abe channel"
     }
   ],
   "social": [
