@@ -1,7 +1,6 @@
 {
   "siteTitle": "安部 達",
   "siteSubtitle": "Toru Abe Official Website",
-  "heroLead": "歴史を見つめ、ことばで未来へつなぐ。",
   "profile": {
     "intro": "安部達の公式ウェブサイトです。プロフィール、研究・執筆活動、社会活動、お知らせをご紹介します。",
     "lifework": "ここに「ライフワーク」の文章を入力します。",
@@ -19,7 +18,7 @@
     {
       "title": "日中関係史",
       "text": "ここに日中関係史に関する活動内容を入力します。",
-      "image": "./images/nichichu.jpg"
+      "image": "images/nichichu.jpg"
     }
   ],
   "works": [
@@ -30,7 +29,7 @@
     {
       "title": "随筆",
       "text": "ここに随筆活動の紹介を入力します。",
-      "image": "./images/essay.jpg"
+      "image": "images/essay.jpg"
     },
     {
       "title": "小説",
@@ -41,13 +40,11 @@
     {
       "title": "未来へのバトンをつなぐ会",
       "text": "ここに活動紹介を入力します。",
-      "url": "",
-      "image": "./images/baton.jpg"
+      "image": "images/baton.jpg"
     },
     {
       "title": "狛江市国際交流協会",
-      "text": "ここに活動紹介を入力します。",
-      "url": ""
+      "text": "ここに活動紹介を入力します。"
     }
   ],
   "news": [
