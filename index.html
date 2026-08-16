@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="安部達 公式ウェブサイト">
+  <title>安部 達 | Official Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-ja" id="site-title">安部 達</span>
+      <span class="brand-en" id="site-subtitle">Toru Abe Official Website</span>
+    </a>
+    <button class="menu-btn" type="button" aria-label="メニューを開く">MENU</button>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="#profile">プロフィール</a>
+      <a href="#themes">主な活動テーマ</a>
+      <a href="#works">主な活動</a>
+      <a href="#social">社会活動</a>
+      <a href="#news">お知らせ</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">TORU ABE / OFFICIAL WEBSITE</p>
+        <h1 id="hero-lead">歴史を見つめ、<br>ことばで未来へつなぐ。</h1>
+        <div class="hero-line"></div>
+        <p class="hero-note">HISTORY · ESSAYS · SOCIAL ACTIVITIES</p>
+        <a class="scroll-link" href="#profile">SCROLL DOWN</a>
+      </div>
+    </section>
+
+    <section class="section" id="profile">
+      <div class="section-heading">
+        <p class="section-no">01</p>
+        <h2>プロフィール</h2>
+        <p class="section-en">PROFILE</p>
+      </div>
+      <div class="profile-feature">
+        <figure class="profile-photo-wrap">
+          <img src="./images/profile.jpg" alt="安部達 プロフィール写真" class="profile-photo">
+        </figure>
+        <div class="profile-copy">
+          <p class="mini-label">ABOUT</p>
+          <p class="lead-text" id="profile-intro"></p>
+        </div>
+      </div>
+      <div class="profile-layout">
+        <div class="profile-cards">
+          <article class="card">
+            <span class="card-index">01</span>
+            <h3>ライフワーク</h3>
+            <p id="profile-lifework"></p>
+          </article>
+          <article class="card">
+            <span class="card-index">02</span>
+            <h3>現在の活動</h3>
+            <p id="profile-current"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="themes">
+      <div class="section-heading">
+        <p class="section-no">02</p>
+        <h2>主な活動テーマ</h2>
+        <p class="section-en">THEMES</p>
+      </div>
+      <div class="grid three" id="themes-grid"></div>
+    </section>
+
+    <section class="section" id="works">
+      <div class="section-heading">
+        <p class="section-no">03</p>
+        <h2>主な活動</h2>
+        <p class="section-en">WORKS</p>
+      </div>
+      <div class="grid three" id="works-grid"></div>
+    </section>
+
+    <section class="section alt" id="social">
+      <div class="section-heading">
+        <p class="section-no">04</p>
+        <h2>社会活動</h2>
+        <p class="section-en">SOCIAL ACTIVITIES</p>
+      </div>
+      <div class="grid two" id="social-grid"></div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="section-heading">
+        <p class="section-no">05</p>
+        <h2>お知らせ</h2>
+        <p class="section-en">NEWS</p>
+      </div>
+      <div class="news-list" id="news-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#top" class="to-top">↑ PAGE TOP</a>
+    <p id="footer-text">© Toru Abe</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
