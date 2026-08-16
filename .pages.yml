@@ -1,0 +1,149 @@
+media:
+  input: images/uploads
+  output: /images/uploads
+
+content:
+  - name: site
+    label: サイト内容
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: siteTitle
+        label: サイト名
+        type: string
+
+      - name: siteSubtitle
+        label: 英語表記
+        type: string
+
+      - name: heroLead
+        label: トップのキャッチコピー
+        type: string
+        required: false
+
+      - name: profile
+        label: プロフィール
+        type: object
+        fields:
+          - name: intro
+            label: プロフィール導入
+            type: text
+          - name: lifework
+            label: ライフワーク
+            type: text
+          - name: current
+            label: 現在の活動
+            type: text
+
+      - name: themes
+        label: 主な活動テーマ
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: タイトル
+            type: string
+          - name: text
+            label: 本文
+            type: text
+          - name: image
+            label: 画像
+            type: image
+            required: false
+          - name: url
+            label: リンク先URL
+            type: string
+            required: false
+          - name: linkLabel
+            label: リンクの文字
+            type: string
+            required: false
+
+      - name: works
+        label: 主な活動
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: タイトル
+            type: string
+          - name: text
+            label: 本文
+            type: text
+          - name: image
+            label: 画像
+            type: image
+            required: false
+          - name: url
+            label: リンク先URL
+            type: string
+            required: false
+          - name: linkLabel
+            label: リンクの文字
+            type: string
+            required: false
+
+      - name: social
+        label: 社会活動
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            label: タイトル
+            type: string
+          - name: text
+            label: 本文
+            type: text
+          - name: image
+            label: 画像
+            type: image
+            required: false
+          - name: url
+            label: リンク先URL
+            type: string
+            required: false
+          - name: linkLabel
+            label: リンクの文字
+            type: string
+            required: false
+
+      - name: news
+        label: お知らせ
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: date
+            label: 日付
+            type: string
+          - name: title
+            label: タイトル
+            type: string
+          - name: text
+            label: 本文
+            type: text
+            required: false
+          - name: url
+            label: リンク先URL
+            type: string
+            required: false
+          - name: linkLabel
+            label: リンクの文字
+            type: string
+            required: false
+
+      - name: footer
+        label: フッター表記
+        type: string
