@@ -1,0 +1,59 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPOSITORY
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "ja"
+
+collections:
+  - name: "site"
+    label: "サイト内容"
+    files:
+      - name: "main"
+        label: "基本情報・各ページ"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - {label: "サイト名", name: "siteTitle", widget: "string"}
+          - {label: "英語表記", name: "siteSubtitle", widget: "string"}
+          - {label: "トップ見出し", name: "heroLead", widget: "string"}
+          - label: "プロフィール"
+            name: "profile"
+            widget: "object"
+            fields:
+              - {label: "プロフィール導入", name: "intro", widget: "text"}
+              - {label: "ライフワーク", name: "lifework", widget: "text"}
+              - {label: "現在の活動", name: "current", widget: "text"}
+          - label: "主な活動テーマ"
+            name: "themes"
+            widget: "list"
+            fields:
+              - {label: "タイトル", name: "title", widget: "string"}
+              - {label: "本文", name: "text", widget: "text"}
+              - {label: "画像", name: "image", widget: "image", required: false}
+          - label: "主な活動"
+            name: "works"
+            widget: "list"
+            fields:
+              - {label: "タイトル", name: "title", widget: "string"}
+              - {label: "本文", name: "text", widget: "text"}
+              - {label: "画像", name: "image", widget: "image", required: false}
+          - label: "社会活動"
+            name: "social"
+            widget: "list"
+            fields:
+              - {label: "タイトル", name: "title", widget: "string"}
+              - {label: "本文", name: "text", widget: "text"}
+              - {label: "URL", name: "url", widget: "string", required: false}
+              - {label: "画像", name: "image", widget: "image", required: false}
+          - label: "お知らせ"
+            name: "news"
+            widget: "list"
+            fields:
+              - {label: "日付", name: "date", widget: "string"}
+              - {label: "タイトル", name: "title", widget: "string"}
+              - {label: "本文", name: "text", widget: "text", required: false}
+          - {label: "フッター表記", name: "footer", widget: "string"}
