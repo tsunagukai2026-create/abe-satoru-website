@@ -84,12 +84,10 @@
   "social": [
     {
       "title": "未来へのバトンをつなぐ会",
-      "text": "ここに活動紹介を入力します。",
       "image": "images/baton.jpg"
     },
     {
-      "title": "狛江市国際交流協会",
-      "text": "ここに活動紹介を入力します。"
+      "title": "狛江市国際交流協会"
     }
   ],
   "footer": "© Satoru Abe"
