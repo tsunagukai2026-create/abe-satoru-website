@@ -5,7 +5,7 @@ async function loadSite(){
   document.title = `${data.siteTitle} | Official Website`;
   document.getElementById('site-title').textContent = data.siteTitle;
   document.getElementById('site-subtitle').textContent = data.siteSubtitle;
-  document.getElementById('hero-lead').innerHTML = data.heroLead.replace('、','、<br>');
+ 
   document.getElementById('profile-intro').textContent = data.profile.intro;
   document.getElementById('profile-lifework').textContent = data.profile.lifework;
   document.getElementById('profile-current').textContent = data.profile.current;
